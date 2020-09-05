@@ -9,6 +9,10 @@ module "academy-deploy" {
   }
 }
 
+output "application_endpoint" {
+    value = "${lookup(var.deployment_endpoint, "${var.deployment_environment}")}.${var.google_domain_name}"
+}
+
 variable "deployment_image" {
     default = "docker.turkmendevops.com/hello-app-dev-feature:ad92483"
 
