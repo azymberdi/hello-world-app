@@ -15,6 +15,7 @@ output "application_endpoint" {
 
 variable "deployment_image" {
     default = "docker.turkmendevops.com/hello-app-dev-feature:ad92483"
+}
 
 variable "deployment_environment" {
     default = "dev"
