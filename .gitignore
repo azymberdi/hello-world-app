@@ -24,7 +24,7 @@ override.tf.json
 *tfvars*
 deployments/terraform/backend.tf
 *backend.tf*
-*
+deployments/terraform/common-service-account.json
 
 # Include override files you do wish to add to version control using negated pattern
 #
